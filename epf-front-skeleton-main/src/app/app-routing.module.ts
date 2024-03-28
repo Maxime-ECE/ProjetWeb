@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core"
 import { RouterModule, Routes } from "@angular/router"
 import { HomeComponent } from "home/home.component"
+import { CardComponent } from "card/card.component"
 import { StudentsComponent } from "students/students.component"
 import { StudentsResolver } from "students/students.resolver"
 import { StudentDetailsComponent } from "students/student-details/student-details.component"
@@ -12,6 +13,10 @@ import { MajorStudentsComponent } from "majors/major-students/major-students.com
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
+  {
+    path: "card",
+    component: CardComponent,
+  },
   {
     path: "students",
     component: StudentsComponent,

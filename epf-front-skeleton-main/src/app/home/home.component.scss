@@ -1,53 +1,35 @@
-:host {
+.title{
   display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: #3f51b5;
+  padding: 2%;
+  font-size: 50px;
+}
+
+.card-group {
+  padding: 2%;
+}
+
+.card{
   align-items: center;
-  margin: 25px;
+  text-align: center;
+  width: 90%;
+  justify-content: center;
+}
 
-  .title {
-    text-align: center;
-    font-family: Caveat, sans-serif;
-    font-size: 3.5em;
-    font-weight: 700;
-    margin: 30px 0;
-  }
+.card-img-top{
+  width: 90%;
+  justify-content: center;
+  padding-top: 4%;
+  transition: transform 0.5s ease; /* Ajoute une transition douce pour l'effet de zoom */
+}
 
-  p {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 1.3em;
-  }
+.card-img-top:hover {
+  transform: scale(1.1); /* Agrandit l'image de 20% au survol */
+}
 
-  .left {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    .sun {
-      width: 90px;
-      margin-left: 35px;
-    }
-
-    .card {
-      border: none;
-      display: flex;
-      align-items: baseline;
-
-      .card-text {
-        font-family: "Dancing Script", sans-serif;
-        font-size: x-large;
-        margin-top: 0
-      }
-    }
-  }
-
-  .right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 80%;
-    }
-  }
+.card-body{
+  padding: 2%;
+  padding-top: 0%;
 }
